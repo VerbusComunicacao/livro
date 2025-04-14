@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação Cristã em tempos difíceis: Há solução? | Lançamento do Livro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/public/capa.webp');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #e74c3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin: 10px;
+        }
+
+        .cta-button:hover {
+            background-color: #c0392b;
+        }
+
+        .cta-button.secondary {
+            background-color: transparent;
+            border: 2px solid white;
+        }
+
+        .cta-button.secondary:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        section {
+            padding: 100px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .book-details {
+            background-color: #f8f9fa;
+        }
+
+        .book-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .book-cover img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .event-info {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #34495e;
+        }
+
+        .event-details p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .links-section {
+            background-color: white;
+            text-align: center;
+        }
+
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .link-card {
+            padding: 30px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .link-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .link-card a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .qr-section {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+        }
+
+        .qr-code img {
+            max-width: 200px;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .book-content {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 60px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Educação Cristã em tempos difíceis: Há solução?</h1>
+            <p>O autor Nilberto de Matos Amorim convida você para um momento especial de lançamento e reflexão sobre o futuro da educação cristã.</p>
+            <a href="#event-details" class="cta-button">Detalhes do Evento</a>
+            <a href="https://www.amazon.com.br/EDUCAO-CRIST-EM-TEMPOS-DIFCEIS-ebook/dp/B0DRTHS2HF" target="_blank" class="cta-button secondary">Comprar o Livro</a>
+        </div>
+    </section>
+
+    <section class="book-details" id="event-details">
+        <div class="container">
+            <div class="book-content">
+                <div class="book-cover">
+                    <img src="/public/capa.webp" alt="Capa do livro Educação Cristã em tempos difíceis">
+                </div>
+                <div class="event-info">
+                    <h2>Detalhes do Lançamento</h2>
+                    <div class="event-details">
+                        <p><strong>Data:</strong> 22 de maio de 2025</p>
+                        <p><strong>Horário:</strong> 18h às 21h</p>
+                        <p><strong>Local:</strong> Livraria Martins Fontes da Consolação<br>
+                        Rua Dr. Vila Nova 309, Vila Boarque</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="links-section">
+        <div class="container">
+            <h2>Saiba Mais</h2>
+            <div class="links-grid">
+                <div class="link-card">
+                    <h3>Canal no WhatsApp</h3>
+                    <p>Fique por dentro das últimas novidades e atualizações</p>
+                    <a href="https://www.whatsapp.com/channel/0029Vb5EImDF6sn24bYegu3q" target="_blank">Acessar Canal →</a>
+                </div>
+                <div class="link-card">
+                    <h3>Amazon</h3>
+                    <p>Adquira seu exemplar na maior livraria online</p>
+                    <a href="https://www.amazon.com.br/EDUCAO-CRIST-EM-TEMPOS-DIFCEIS-ebook/dp/B0DRTHS2HF" target="_blank">Comprar Agora →</a>
+                </div>
+                <div class="link-card">
+                    <h3>Sobre o Autor</h3>
+                    <p>Conheça mais sobre o trabalho do professor Nilberto</p>
+                    <a href="https://www.clareiras.com/" target="_blank">Visitar Site →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="qr-section">
+        <div class="container">
+            <h2>Conecte-se Conosco</h2>
+            <p>Escaneie o QR Code para mais informações e atualizações</p>
+            <div class="qr-code">
+                <img src="/public/qr-code.png" alt="QR Code para mais informações">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
