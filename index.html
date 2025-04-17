@@ -23,7 +23,7 @@
 
         .hero {
             min-height: 100vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/public/capa.webp');
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('public/capa.webp');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -96,11 +96,40 @@
             align-items: center;
         }
 
+        .book-cover {
+            perspective: 1000px;
+            transform-style: preserve-3d;
+            position: relative;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
         .book-cover img {
             max-width: 100%;
             height: auto;
-            border-radius: 10px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            display: block;
+            border-radius: 2px;
+            box-shadow: -5px 5px 15px rgba(0,0,0,0.2);
+            transform: rotateY(-20deg);
+            transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            position: relative;
+        }
+
+        .book-cover:hover img {
+            transform: rotateY(-10deg);
+        }
+
+        .book-shadow {
+            position: absolute;
+            width: 90%;
+            height: 100%;
+            top: 8%;
+            left: 8%;
+            background: rgba(0,0,0,0.15);
+            filter: blur(10px);
+            transform: rotateY(-20deg) translateZ(-50px);
+            z-index: -1;
         }
 
         .event-info {
@@ -198,7 +227,10 @@
         <div class="container">
             <div class="book-content">
                 <div class="book-cover">
-                    <img src="/public/capa.webp" alt="Capa do livro Educação Cristã em tempos difíceis">
+                    <div class="book-shadow"></div>
+                    <a href="https://www.amazon.com.br/EDUCAO-CRIST-EM-TEMPOS-DIFCEIS-ebook/dp/B0DRTHS2HF" target="_blank">
+                    <img src="public/capa.webp" alt="Capa do livro Educação Cristã em tempos difíceis">
+                    </a>
                 </div>
                 <div class="event-info">
                     <h2>Detalhes do Lançamento</h2>
@@ -207,6 +239,7 @@
                         <p><strong>Horário:</strong> 18h às 21h</p>
                         <p><strong>Local:</strong> Livraria Martins Fontes da Consolação<br>
                         Rua Dr. Vila Nova 309, Vila Boarque</p>
+                    <p><a href="https://www.whatsapp.com/channel/0029Vb5EImDF6sn24bYegu3q" class="cta-button" target="_blank">Acompanhe as Novidades</a></p>
                     </div>
                 </div>
             </div>
@@ -241,7 +274,7 @@
             <h2>Conecte-se Conosco</h2>
             <p>Escaneie o QR Code para mais informações e atualizações</p>
             <div class="qr-code">
-                <img src="/public/qr-code.png" alt="QR Code para mais informações">
+                <img src="public/qr-code.png" alt="QR Code para mais informações">
             </div>
         </div>
     </section>
